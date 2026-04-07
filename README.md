@@ -6,10 +6,12 @@ Sistema de controle de pedágios
 
 ## Instruções de execução:
 
+Requisitos: Git, Docker e Node.js instalados. 
 1. Clone o repositório
 2. Execute `docker network create local-network` e `docker compose up -d` para inicializar o banco de dados
 3. execute `npm install` para baixar as dependências
-4. execute `npm start` para iniciar o servidor
+4. crie o arquivo .env, com base no template.
+5. execute `npm start` para iniciar o servidor
 
 ### Relacionamentos Principais
 - **Veículo e Passagem**: Um veículo pode registrar passagens em múltiplos pedágios ao longo do tempo.
