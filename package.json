@@ -1,0 +1,52 @@
+{
+  "name": "trabalho_pw_api",
+  "version": "1.0.0",
+  "description": "API pata o trabalho de PW",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leozzzzzzzzz/trabalho_pw_api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leozzzzzzzzz/trabalho_pw_api/issues"
+  },
+  "homepage": "https://github.com/leozzzzzzzzz/trabalho_pw_api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv-safe": "^9.1.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.2.9",
+    "objection": "^3.1.5",
+    "pg": "^8.15.5",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/tests/**/*.test.js"],
+    "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"],
+    "collectCoverageFrom": [
+      "controllers/**/*.js",
+      "usecases/**/*.js",
+      "dao/**/*.js",
+      "models/**/*.js",
+      "!**/node_modules/**",
+      "!**/tests/**"
+    ]
+  }
+}
