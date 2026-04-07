@@ -1,3 +1,5 @@
+\c trabalho_web;
+
 create table tipos (
    codigo serial not null primary key, 
    nome varchar (20) not null,

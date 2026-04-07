@@ -3,6 +3,7 @@ services:
   postgres-db:
     image: postgres:16
     environment:
+      POSTGRES_DB: trabalho_web
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     volumes:
