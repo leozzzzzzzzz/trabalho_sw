@@ -12,10 +12,8 @@ Sistema de controle de pedágios
 4. execute `npm start` para iniciar o servidor
 
 ### Relacionamentos Principais
-
-- **Veículo e Pedágio**: Um veículo pode registrar passagens em múltiplos pedágios ao longo do tempo.
-- **Motorista e Veículo**: Cada veículo é associado a um motorista responsável, com possibilidade de múltiplos motoristas por veículo em cenários compartilhados.
-- **Passagem**: Cada passagem gera uma transação de pagamento.
+- **Veículo e Passagem**: Um veículo pode registrar passagens em múltiplos pedágios ao longo do tempo.
+- **Local e Passagem**: Cada passagem tem um local, um local pode ter várias passagens
 
 ### Stack 
 - Postgres para persistência em banco de dados
