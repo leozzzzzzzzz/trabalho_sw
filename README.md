@@ -7,7 +7,7 @@ Sistema de controle de pedágios
 ## Instruções de execução:
 
 1. Clone o repositório
-2. Execute o `docker compose up -d` para inicializar o banco de dados
+2. Execute `docker network create local-network` e `docker compose up -d` para inicializar o banco de dados
 3. execute `npm install` para baixar as dependências
 4. execute `npm start` para iniciar o servidor
 
